@@ -15,3 +15,22 @@ func create() *Sortedset {
 func (sortedset *Sortedset) Add(ele string, score float64) bool {
 	return true
 }
+
+func (sortedset *Sortedset) Delete(ele string) bool {
+	return true
+}
+
+//ZSCORE
+func (sortedset *Sortedset) Get(ele string) (element *Element, ok bool) {
+	return element, true
+}
+
+//ZCARD
+func (sortedset *Sortedset) Len() int64 {
+	return int64(0)
+}
+
+//ZRANK && ZREVRANK
+func (sortedset *Sortedset) GetRank(ele string, desc bool) (rank int64) {
+	return rank
+}
